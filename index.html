@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css" type="text/css">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">
+            Cadastro de DEVs
+        </h1>
+        <p id="subtitulo">
+            Complete suas informações:
+        </p>
+        
+    </div>
+    <!--Formulário-->
+    <form action="cadastro devs">
+        <fieldset class="grupo">
+            <!--Campo do nome-->
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <!--Tag "required utilizada para ser obrigatório o preenchimento do campo"-->
+            </div>
+            <!--Campo do sobrenome-->
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+                <!--Tag "required utilizada para ser obrigatório o preenchimento do campo"-->
+            </div>
+            <br>
+            <!--Campo do email.-->
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <!--Tag "required utilizada para ser obrigatório o preenchimento do campo"-->
+        </div>
+        </fieldset>
+        <br>
+        <!--Campo do tipo do desenvolvedor.-->
+        <div class="campo">
+            <label for="tipo de desenvolvedor">De qual lado la aplicação você desenvolve?</label>
+            <label for="frontend">
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label for="backend">
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label for="fullstack">
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+        <br>
+        <!--Seleção de senioridade-->
+        <div class="campo">
+            <label for="senioridade">Qual a sua senioridade?</label>
+            <label for="junior">
+                <input type="radio" name="senioridade" value="junior" checked>JR
+            </label>
+            <label for="pleno">
+                <input type="radio" name="senioridade" value="pleno">Pleno
+            </label>
+            <label for="senior">
+                <input type="radio" name="senioridade" value="senior">Senior
+            </label>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <!--Nesse caso a pessoa pode marcar mais de um campo.-->
+                <label for="tecnologias">Assinale as tecnologias dominantes:</label> <br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Python">
+                <label for="tecnologia5">Python</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Java">
+                <label for="tecnologia6">Java</label>
+            </div>
+        </fieldset>
+        
+        <!--Espaço para o usuário escrever sobre suas experiências.-->
+        <div class="campo">
+            <br>
+            <label for="experiencia">Conte um pouco da sua experiência:</label>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="10" style="width: 35em;"></textarea>
+        </div>
+        <br>
+        <!--botão de enviar o formulário:-->
+        <button class="botao"><a href="conclusaoformulario.html">Concluir!</a></button>
+    </form>
+</body>
+</html>
